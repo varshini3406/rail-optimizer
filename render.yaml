@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rail-optimizer
+    env: python
+    buildCommand: pip install flask
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 5000
